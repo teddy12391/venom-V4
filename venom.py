@@ -8,7 +8,7 @@ import string
 import datetime
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-from config import BOT_TOKEN, ADMIN_IDS, OWNER_USERNAME
+from config import 6914567930:AAGDgCan_DEexdlECMY7azL5hbMri4350BM, ADMIN_IDS, @Harekrishnaharehareram
 
 
 USER_FILE = "users.json"
@@ -89,7 +89,7 @@ async def genkey(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         else:
             response = "Usage: /genkey <amount> <hours/days>"
     else:
-        response = f"ONLY OWNER CAN USE💀OWNER OWNER- @{OWNER_USERNAME}..."
+        response = f"ONLY OWNER CAN USE💀OWNER OWNER- @{@Harekrishnaharehareram}..."
 
     await update.message.reply_text(response)
 
@@ -110,9 +110,9 @@ async def redeem(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             save_users()
             del keys[key]
             save_keys()
-            response = f"✅Key redeemed successfully! Access granted until: {users[user_id]} OWNER- @{OWNER_USERNAME}..."
+            response = f"✅Key redeemed successfully! Access granted until: {users[]} OWNER- @{Harekrishnaharehareram}..."
         else:
-            response = f"Invalid or expired key buy from OWNER- @{OWNER_USERNAME}..."
+            response = f"Invalid or expired key buy from OWNER- @{Harekrishnaharehareram}..."
     else:
         response = f"Usage: /redeem <key> if you don't  have  buy from  @{OWNER_USERNAME}..."
 
@@ -120,7 +120,7 @@ async def redeem(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 async def allusers(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    user_id = str(update.message.from_user.id)
+    user_id = str(update.message.from 6914567930 _user.id)
     if user_id in ADMIN_IDS:
         if users:
             response = "Authorized Users:\n"
